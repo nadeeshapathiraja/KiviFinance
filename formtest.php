@@ -1,3 +1,7 @@
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,13 +106,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Make</label>
-                                <input type="text" class="form-control" id="make" name="make">
+                                <input type="text" class="form-control" id="purchase_make" name="purchase_make">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Year</label>
-                                <input type="number" class="form-control" id="year" name="year">
+                                <input type="number" class="form-control" id="purchase_year" name="purchase_year">
                             </div>
                         </div>
                     </div>
@@ -116,13 +120,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Model</label>
-                                <input type="text" class="form-control" id="model" name="model">
+                                <input type="text" class="form-control" id="purchase_model" name="purchase_model">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Color</label>
-                                <input type="text" class="form-control" id="color" name="color">
+                                <input type="text" class="form-control" id="purchase_color" name="purchase_color">
                             </div>
                         </div>
                     </div>
@@ -130,7 +134,8 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Registration Number</label>
-                                <input type="text" class="form-control" id="register_number" name="register_number">
+                                <input type="text" class="form-control" id="purchase_register_number"
+                                    name="purchase_register_number">
                             </div>
                         </div>
                         <div class="col-md-6"></div>
@@ -146,13 +151,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Make</label>
-                                <input type="text" class="form-control" id="make" name="make">
+                                <input type="text" class="form-control" id="trade_make" name="trade_make">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Year</label>
-                                <input type="number" class="form-control" id="year" name="year">
+                                <input type="number" class="form-control" id="trade_year" name="trade_year">
                             </div>
                         </div>
                     </div>
@@ -160,13 +165,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Model</label>
-                                <input type="text" class="form-control" id="model" name="model">
+                                <input type="text" class="form-control" id="trade_model" name="trade_model">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Color</label>
-                                <input type="text" class="form-control" id="color" name="color">
+                                <input type="text" class="form-control" id="trade_color" name="trade_color">
                             </div>
                         </div>
                     </div>
@@ -174,13 +179,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Warrant of Fitness Expiry</label>
-                                <input type="date" class="form-control" id="warranty" name="warranty">
+                                <input type="date" class="form-control" id="trade_warranty" name="trade_warranty">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Renewal of Vehicle Licence (rego) Due Date</label>
-                                <input type="date" class="form-control" id="renewal" name="renewal">
+                                <input type="date" class="form-control" id="trade_renewal" name="trade_renewal">
                             </div>
                         </div>
                     </div>
@@ -189,7 +194,7 @@
 
                             <div class="form-group files">
                                 <label>Upload Your File </label>
-                                <input type="file" class="form-control" multiple="">
+                                <input type="file" class="form-control" multiple="" name="trade_file" id="trade_file">
                             </div>
                         </div>
                     </div>
@@ -578,6 +583,7 @@ $(document).ready(function() {
 </script>
 
 </html>
+
 <?php
 
 $_POST['loan_amount'];
@@ -593,7 +599,8 @@ $_POST['trade_color'];
 $_POST['trade_warranty'];
 $_POST['trade_renewal'];
 $_POST['trade_file'];
-//income Repeate div
+
+//Income Repeate div
 $_POST['income_amount'];
 $_POST['income_type'];
 $_POST['income_frequency'];
@@ -603,6 +610,19 @@ $_POST['motage_rent'];
 $_POST['frequency_motage'];
 $_POST['Loan_creditcard_expence'];
 $_POST['income_frequency'];
-$_POST['loan_amount'];
+
+//Asset Repeate div
+$_POST['asset_type'];
+$_POST['asset_value'];
+$_POST['asset_money_owing'];
+$_POST['asset_repayment'];
+$_POST['asset_frequency_Radio'];
+
+//Liabilities Repeate div
+$_POST['liabilities_asset_type'];
+$_POST['liabilities_value'];
+$_POST['liabilities_money_owing'];
+$_POST['liabilities_repayment'];
+$_POST['liabilities_frequency_Radio'];
 
 ?>

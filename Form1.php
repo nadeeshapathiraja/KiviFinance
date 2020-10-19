@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finane Form</title>
+    <title>Finane Form 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -78,7 +78,7 @@
 
 <body>
 
-    <Form action="Form2.php" method="post">
+    <Form action="Form1.php" method="post">
         <div class="container-fluid" style="width: 1300px; margin-bottom: 50px; margin-top: 100px;
         background-color:white;">
             <br>
@@ -438,34 +438,34 @@
 </html>
 
 <?php
-// session_start();
+session_start();
 
-// $_SESSION['title'] = $_POST['title'];
-// $_SESSION['middle_name'] = $_POST['middle_name'];
-// $_SESSION['gender'] = $_POST['gender'];
-// $_SESSION['dob'] = $_POST['dob'];
-// $_SESSION['work_phone'] = $_POST['work_phone'];
-// $_SESSION['email'] = $_POST['email'];
-// $_SESSION['first_name'] = $_POST['first_name'];
-// $_SESSION['surname'] = $_POST['surname'];
-// $_SESSION['marital_status'] = $_POST['marital_status'];
-// $_SESSION['home_phone'] = $_POST['home_phone'];
-// $_SESSION['mobile'] = $_POST['mobile'];
-// $_SESSION['drivers_Licence'] = $_POST['drivers_Licence'];
-// $_SESSION['time_contact'] = $_POST['time_contact'];
-// $_SESSION['checkResident'] = $_POST['checkResident'];
-// $_SESSION['childern_count'] = $_POST['childern_count'];
-// $_SESSION['current_addres'] = $_POST['current_addres'];
-// $_SESSION['address_status'] = $_POST['address_status'];
-// $_SESSION['living_year'] = $_POST['living_year'];
-// $_SESSION['living_month'] = $_POST['living_month'];
-// $_SESSION['current_ocupation'] = $_POST['current_ocupation'];
-// $_SESSION['current_employee'] = $_POST['current_employee'];
-// $_SESSION['employee_status'] = $_POST['employee_status'];
-// $_SESSION['permanent_employee'] = $_POST['permanent_employee'];
-// $_SESSION['working_year'] = $_POST['working_year'];
-// $_SESSION['workin_month'] = $_POST['workin_month'];
-// $_SESSION['comment'] = $_POST['comment'];
-// $_SESSION['source'] = $_POST['source'];
+$_SESSION['title'] = $_POST['title'];
+$_SESSION['middle_name'] = $_POST['middle_name'];
+$_SESSION['gender'] = $_POST['gender'];
+$_SESSION['dob'] = $_POST['dob'];
+$_SESSION['work_phone'] = $_POST['work_phone'];
+$_SESSION['email'] = $_POST['email'];
+$_SESSION['first_name'] = $_POST['first_name'];
+$_SESSION['surname'] = $_POST['surname'];
+$_SESSION['marital_status'] = $_POST['marital_status'];
+$_SESSION['home_phone'] = $_POST['home_phone'];
+$_SESSION['mobile'] = $_POST['mobile'];
+$_SESSION['drivers_Licence'] = $_POST['drivers_Licence'];
+$_SESSION['time_contact'] = $_POST['time_contact'];
+$_SESSION['checkResident'] = $_POST['checkResident'];
+$_SESSION['childern_count'] = $_POST['childern_count'];
+$_SESSION['current_addres'] = $_POST['current_addres'];
+$_SESSION['address_status'] = $_POST['address_status'];
+$_SESSION['living_year'] = $_POST['living_year'];
+$_SESSION['living_month'] = $_POST['living_month'];
+$_SESSION['current_ocupation'] = $_POST['current_ocupation'];
+$_SESSION['current_employee'] = $_POST['current_employee'];
+$_SESSION['employee_status'] = $_POST['employee_status'];
+$_SESSION['permanent_employee'] = $_POST['permanent_employee'];
+$_SESSION['working_year'] = $_POST['working_year'];
+$_SESSION['workin_month'] = $_POST['workin_month'];
+$_SESSION['comment'] = $_POST['comment'];
+$_SESSION['source'] = $_POST['source'];
 
 ?>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finane Form</title>
+    <title>Finane Form 3</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -153,11 +153,47 @@
 </html>
 
 <?php
-// if (isset($_POST['submit'])) {
-// $count = count($_POST["income_amount"]);
-//Getting post values
-$skill = $_GET["income_amount"];
-echo $skill;
-// }
+
+// session_start();
+
+// $title = $_SESSION['title'];
+// $middle_name = $_SESSION['middle_name'];
+// $gender = $_SESSION['gender'];
+// $dob = $_SESSION['dob'];
+// $work_phone = $_SESSION['work_phone'];
+// $email = $_SESSION['email'];
+// $first_name = $_SESSION['first_name'];
+// $surname = $_SESSION['surname'];
+// $marital_status = $_SESSION['marital_status'];
+// $home_phone = $_SESSION['home_phone'];
+// $mobile = $_SESSION['mobile'];
+// $drivers_Licence = $_SESSION['drivers_Licence'];
+// $time_contact = $_SESSION['time_contact'];
+// $checkResident = $_SESSION['checkResident'];
+// $childern_count = $_SESSION['childern_count'];
+// $current_addres = $_SESSION['current_addres'];
+// $address_status = $_SESSION['address_status'];
+// $living_year = $_SESSION['living_year'];
+// $living_month = $_SESSION['living_month'];
+// $current_ocupation = $_SESSION['current_ocupation'];
+// $current_employee = $_SESSION['current_employee'];
+// $employee_status = $_SESSION['employee_status'];
+// $permanent_employee = $_SESSION['permanent_employee'];
+// $working_year = $_SESSION['working_year'];
+// $workin_month = $_SESSION['workin_month'];
+// $comment  = $_SESSION['comment'];
+// $source = $_SESSION['source'];
+
+
+if (isset($_POST['submit'])) {
+
+    $skill = array();
+    //Getting post values
+    $skill = $_POST["asset_type"];
+
+    echo implode($skill);
+    //echo implode("','", $skill);
+}
+
 
 ?>
