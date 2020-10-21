@@ -154,46 +154,76 @@
 
 <?php
 
-// session_start();
+if (isset($_POST['next'])) {
 
-// $title = $_SESSION['title'];
-// $middle_name = $_SESSION['middle_name'];
-// $gender = $_SESSION['gender'];
-// $dob = $_SESSION['dob'];
-// $work_phone = $_SESSION['work_phone'];
-// $email = $_SESSION['email'];
-// $first_name = $_SESSION['first_name'];
-// $surname = $_SESSION['surname'];
-// $marital_status = $_SESSION['marital_status'];
-// $home_phone = $_SESSION['home_phone'];
-// $mobile = $_SESSION['mobile'];
-// $drivers_Licence = $_SESSION['drivers_Licence'];
-// $time_contact = $_SESSION['time_contact'];
-// $checkResident = $_SESSION['checkResident'];
-// $childern_count = $_SESSION['childern_count'];
-// $current_addres = $_SESSION['current_addres'];
-// $address_status = $_SESSION['address_status'];
-// $living_year = $_SESSION['living_year'];
-// $living_month = $_SESSION['living_month'];
-// $current_ocupation = $_SESSION['current_ocupation'];
-// $current_employee = $_SESSION['current_employee'];
-// $employee_status = $_SESSION['employee_status'];
-// $permanent_employee = $_SESSION['permanent_employee'];
-// $working_year = $_SESSION['working_year'];
-// $workin_month = $_SESSION['workin_month'];
-// $comment  = $_SESSION['comment'];
-// $source = $_SESSION['source'];
+    $loan_amount = $_POST['loan_amount'];
+    $purchase_make = $_POST['purchase_make'];
+    $purchase_year = $_POST['purchase_year'];
+    $purchase_model = $_POST['purchase_model'];
+    $purchase_color = $_POST['purchase_color'];
+    $purchase_register_number = $_POST['purchase_register_number'];
+    $trade_make = $_POST['trade_make'];
+    $trade_year = $_POST['trade_year'];
+    $trade_model = $_POST['trade_model'];
+    $trade_color = $_POST['trade_color'];
+    $trade_warranty = $_POST['trade_warranty'];
+    $trade_renewal = $_POST['trade_renewal'];
+    $trade_file = $_POST['trade_file'];
 
+    //Income Repeate div
+    $income_amount = $_POST['income_amount'];
+    $income_type = $_POST['income_type'];
+    $income_frequency = $_POST['income_frequency'];
 
-if (isset($_POST['submit'])) {
+    $totalIncome = $_POST['totalIncome'];
+    $motage_rent = $_POST['motage_rent'];
+    $frequency_motage = $_POST['frequency_motage'];
+    $Loan_creditcard_expence = $_POST['Loan_creditcard_expence'];
+    $income_frequency = $_POST['income_frequency'];
 
-    $skill = array();
-    //Getting post values
-    $skill = $_POST["asset_type"];
+    //Asset Repeate div
+    $asset_type = $_POST['asset_type'];
+    $asset_value = $_POST['asset_value'];
+    $asset_money_owing = $_POST['asset_money_owing'];
+    $asset_repayment = $_POST['asset_repayment'];
+    $asset_frequency_Radio = $_POST['asset_frequency_Radio'];
 
-    echo implode($skill);
-    //echo implode("','", $skill);
+    //Liabilities Repeate div
+    $liabilities_asset_type = $_POST['liabilities_asset_type'];
+    $liabilities_value = $_POST['liabilities_value'];
+    $liabilities_money_owing = $_POST['liabilities_money_owing'];
+    $liabilities_repayment = $_POST['liabilities_repayment'];
+    $liabilities_frequency_Radio = $_POST['liabilities_frequency_Radio'];
+
+    // session_start();
+
+    // $title = $_SESSION['title'];
+    // $middle_name = $_SESSION['middle_name'];
+    // $gender = $_SESSION['gender'];
+    // $dob = $_SESSION['dob'];
+    // $work_phone = $_SESSION['work_phone'];
+    // $email = $_SESSION['email'];
+    // $first_name = $_SESSION['first_name'];
+    // $surname = $_SESSION['surname'];
+    // $marital_status = $_SESSION['marital_status'];
+    // $home_phone = $_SESSION['home_phone'];
+    // $mobile = $_SESSION['mobile'];
+    // $drivers_Licence = $_SESSION['drivers_Licence'];
+    // $time_contact = $_SESSION['time_contact'];
+    // $checkResident = $_SESSION['checkResident'];
+    // $childern_count = $_SESSION['childern_count'];
+    // $current_addres = $_SESSION['current_addres'];
+    // $address_status = $_SESSION['address_status'];
+    // $living_year = $_SESSION['living_year'];
+    // $living_month = $_SESSION['living_month'];
+    // $current_ocupation = $_SESSION['current_ocupation'];
+    // $current_employee = $_SESSION['current_employee'];
+    // $employee_status = $_SESSION['employee_status'];
+    // $permanent_employee = $_SESSION['permanent_employee'];
+    // $working_year = $_SESSION['working_year'];
+    // $workin_month = $_SESSION['workin_month'];
+    // $comment  = $_SESSION['comment'];
+    // $source = $_SESSION['source'];
 }
-
 
 ?>

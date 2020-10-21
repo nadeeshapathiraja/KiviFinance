@@ -78,7 +78,7 @@
 
 <body>
 
-    <Form action="Form1.php" method="post">
+    <Form action="Form2.php" method="post">
         <div class="container-fluid" style="width: 1300px; margin-bottom: 50px; margin-top: 100px;
         background-color:white;">
             <br>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="form-group">
                         <label>Phone Work</label>
-                        <input type="tel" class="form-control" id="work_phone" name="work_phone">
+                        <input type="number" class="form-control" id="work_phone" name="work_phone">
                     </div>
                     <div class="form-group">
                         <label>Email Address</label>
@@ -145,11 +145,11 @@
                     </div>
                     <div class="form-group">
                         <label>Phone Home</label>
-                        <input type="text" class="form-control" id="home_phone" name="home_phone">
+                        <input type="number" class="form-control" id="home_phone" name="home_phone">
                     </div>
                     <div class="form-group">
                         <label>Mobile</label>
-                        <input type="text" class="form-control" id="mobile" name="mobile" required>
+                        <input type="number" class="form-control" id="mobile" name="mobile" required>
                     </div>
                     <div class="form-group">
                         <label>Drivers Licence(Required for Loan)</label>
@@ -425,7 +425,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <input class="btn btn-primary" style="width: 100%;" type="submit" value="NEXT">
+                    <input class="btn btn-primary" style="width: 100%;" type="submit" name="next" id="next"
+                        value="NEXT">
                 </div>
             </div>
         </div>
@@ -436,36 +437,3 @@
 </body>
 
 </html>
-
-<?php
-session_start();
-
-$_SESSION['title'] = $_POST['title'];
-$_SESSION['middle_name'] = $_POST['middle_name'];
-$_SESSION['gender'] = $_POST['gender'];
-$_SESSION['dob'] = $_POST['dob'];
-$_SESSION['work_phone'] = $_POST['work_phone'];
-$_SESSION['email'] = $_POST['email'];
-$_SESSION['first_name'] = $_POST['first_name'];
-$_SESSION['surname'] = $_POST['surname'];
-$_SESSION['marital_status'] = $_POST['marital_status'];
-$_SESSION['home_phone'] = $_POST['home_phone'];
-$_SESSION['mobile'] = $_POST['mobile'];
-$_SESSION['drivers_Licence'] = $_POST['drivers_Licence'];
-$_SESSION['time_contact'] = $_POST['time_contact'];
-$_SESSION['checkResident'] = $_POST['checkResident'];
-$_SESSION['childern_count'] = $_POST['childern_count'];
-$_SESSION['current_addres'] = $_POST['current_addres'];
-$_SESSION['address_status'] = $_POST['address_status'];
-$_SESSION['living_year'] = $_POST['living_year'];
-$_SESSION['living_month'] = $_POST['living_month'];
-$_SESSION['current_ocupation'] = $_POST['current_ocupation'];
-$_SESSION['current_employee'] = $_POST['current_employee'];
-$_SESSION['employee_status'] = $_POST['employee_status'];
-$_SESSION['permanent_employee'] = $_POST['permanent_employee'];
-$_SESSION['working_year'] = $_POST['working_year'];
-$_SESSION['workin_month'] = $_POST['workin_month'];
-$_SESSION['comment'] = $_POST['comment'];
-$_SESSION['source'] = $_POST['source'];
-
-?>

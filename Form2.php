@@ -578,31 +578,39 @@ $(document).ready(function() {
 </script>
 
 </html>
+
 <?php
 
-$_POST['loan_amount'];
-$_POST['purchase_make'];
-$_POST['purchase_year'];
-$_POST['purchase_model'];
-$_POST['purchase_color'];
-$_POST['purchase_register_number'];
-$_POST['trade_make'];
-$_POST['trade_year'];
-$_POST['trade_model'];
-$_POST['trade_color'];
-$_POST['trade_warranty'];
-$_POST['trade_renewal'];
-$_POST['trade_file'];
-//income Repeate div
-$_POST['income_amount'];
-$_POST['income_type'];
-$_POST['income_frequency'];
+if (isset($_POST['next'])) {
 
-$_POST['totalIncome'];
-$_POST['motage_rent'];
-$_POST['frequency_motage'];
-$_POST['Loan_creditcard_expence'];
-$_POST['income_frequency'];
-$_POST['loan_amount'];
+    session_start();
 
+    $_SESSION['title'] = $_POST['title'];
+    $_SESSION['middle_name'] = $_POST['middle_name'];
+    $_SESSION['gender'] = $_POST['gender'];
+    $_SESSION['dob'] = $_POST['dob'];
+    $_SESSION['work_phone'] = $_POST['work_phone'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['first_name'] = $_POST['first_name'];
+    $_SESSION['surname'] = $_POST['surname'];
+    $_SESSION['marital_status'] = $_POST['marital_status'];
+    $_SESSION['home_phone'] = $_POST['home_phone'];
+    $_SESSION['mobile'] = $_POST['mobile'];
+    $_SESSION['drivers_Licence'] = $_POST['drivers_Licence'];
+    $_SESSION['time_contact'] = $_POST['time_contact'];
+    $_SESSION['checkResident'] = $_POST['checkResident'];
+    $_SESSION['childern_count'] = $_POST['childern_count'];
+    $_SESSION['current_addres'] = $_POST['current_addres'];
+    $_SESSION['address_status'] = $_POST['address_status'];
+    $_SESSION['living_year'] = $_POST['living_year'];
+    $_SESSION['living_month'] = $_POST['living_month'];
+    $_SESSION['current_ocupation'] = $_POST['current_ocupation'];
+    $_SESSION['current_employee'] = $_POST['current_employee'];
+    $_SESSION['employee_status'] = $_POST['employee_status'];
+    $_SESSION['permanent_employee'] = $_POST['permanent_employee'];
+    $_SESSION['working_year'] = $_POST['working_year'];
+    $_SESSION['workin_month'] = $_POST['workin_month'];
+    $_SESSION['comment'] = $_POST['comment'];
+    $_SESSION['source'] = $_POST['source'];
+}
 ?>
