@@ -252,7 +252,8 @@ button:hover {
                     <div class="col-md-12">
                         <div class="form-group files">
                             <label>Upload Your File </label>
-                            <input type="file" class="form-control" multiple="">
+                            <input type="file" name="driving_license" id="driving_license" class="form-control"
+                                multiple="">
                         </div>
                     </div>
                 </div>
@@ -498,10 +499,6 @@ button:hover {
                                             <label class="form-check-label">
                                                 BillBoard
                                             </label>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-top: 5px;">
-                                        <div class="col-md-12">
                                             <input type="checkbox" name="check_list[]" value="News">
                                             <label class="form-check-label">
                                                 News
@@ -547,13 +544,13 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Make</label>
-                                    <input type="text" class="form-control" id="make" name="make">
+                                    <input type="text" class="form-control" id="purchase_make" name="purchase_make">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Year</label>
-                                    <input type="number" class="form-control" id="year" name="year">
+                                    <input type="number" class="form-control" id="purchase_year" name="purchase_year">
                                 </div>
                             </div>
                         </div>
@@ -561,13 +558,13 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Model</label>
-                                    <input type="text" class="form-control" id="model" name="model">
+                                    <input type="text" class="form-control" id="purchase_model" name="purchase_model">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Color</label>
-                                    <input type="text" class="form-control" id="color" name="color">
+                                    <input type="text" class="form-control" id="purchase_color" name="purchase_color">
                                 </div>
                             </div>
                         </div>
@@ -575,7 +572,8 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Registration Number</label>
-                                    <input type="text" class="form-control" id="register_number" name="register_number">
+                                    <input type="text" class="form-control" id="purchase_register_number"
+                                        name="purchase_register_number">
                                 </div>
                             </div>
                             <div class="col-md-6"></div>
@@ -591,13 +589,13 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Make</label>
-                                    <input type="text" class="form-control" id="make" name="make">
+                                    <input type="text" class="form-control" id="trade_make" name="trade_make">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Year</label>
-                                    <input type="number" class="form-control" id="year" name="year">
+                                    <input type="number" class="form-control" id="trade_year" name="trade_year">
                                 </div>
                             </div>
                         </div>
@@ -605,13 +603,13 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Model</label>
-                                    <input type="text" class="form-control" id="model" name="model">
+                                    <input type="text" class="form-control" id="trade_model" name="trade_model">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Color</label>
-                                    <input type="text" class="form-control" id="color" name="color">
+                                    <input type="text" class="form-control" id="trade_color" name="trade_color">
                                 </div>
                             </div>
                         </div>
@@ -619,13 +617,13 @@ button:hover {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Warrant of Fitness Expiry</label>
-                                    <input type="date" class="form-control" id="warranty" name="warranty">
+                                    <input type="date" class="form-control" id="trade_warranty" name="trade_warranty">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Renewal of Vehicle Licence (rego) Due Date</label>
-                                    <input type="date" class="form-control" id="renewal" name="renewal">
+                                    <input type="date" class="form-control" id="trade_renewal" name="trade_renewal">
                                 </div>
                             </div>
                         </div>
@@ -634,7 +632,8 @@ button:hover {
 
                                 <div class="form-group files">
                                     <label>Upload Your File </label>
-                                    <input type="file" class="form-control" multiple="">
+                                    <input type="file" name="vehicle_image_file" id="vehicle_image_file"
+                                        class="form-control" multiple="">
                                 </div>
                             </div>
                         </div>
@@ -1135,9 +1134,11 @@ button:hover {
         }
         if (n == (x.length - 1)) {
             document.getElementById("nextBtn").innerHTML = "Submit";
+            // document.getElementById("nextBtn").setAttribute("type", submit);
         } else {
             document.getElementById("nextBtn").innerHTML = "Next";
         }
+
         //... and run a function that will display the correct step indicator:
         fixStepIndicator(n)
     }
@@ -1154,14 +1155,7 @@ button:hover {
         // if you have reached the end of the form...
         if (currentTab >= x.length) {
             // ... the form gets submitted:
-
             document.getElementById("finance_form").submit();
-            var first_name = document.getElementById("first_name").value;
-            var surname = document.getElementById("surname").value;
-            console.log(first_name);
-            alert(" Name : " + first_name + " n Email : " + surname + " n Form Id : " + document.getElementById(
-                    "finance_form")
-                .getAttribute("id") + "nn Form Submitted Successfully......");
             return false;
         }
         // Otherwise, display the correct tab:
@@ -1265,7 +1259,7 @@ button:hover {
 </html>
 
 <?php
-if (isset($_POST['next'])) {
+if (isset($_POST['title'])) {
 
     //Form 1
     $title = $_REQUEST['title'];
@@ -1279,7 +1273,11 @@ if (isset($_POST['next'])) {
     $marital_status = $_REQUEST['marital_status'];
     $home_phone = $_REQUEST['home_phone'];
     $mobile = $_REQUEST['mobile'];
-    $drivers_Licence = $_REQUEST['drivers_Licence'];
+
+    //page 1 file input
+    // $drivers_Licence = $_REQUEST['drivers_Licence'];
+    // $file_name1 = $_FILES['drivers_Licence']['name'];
+
     $time_contact = $_REQUEST['time_contact'];
     $checkResident = $_REQUEST['checkResident'];
     $childern_count = $_REQUEST['childern_count'];
@@ -1294,7 +1292,9 @@ if (isset($_POST['next'])) {
     $working_year = $_REQUEST['working_year'];
     $workin_month = $_REQUEST['workin_month'];
     $comment = $_REQUEST['comment'];
-    $source = $_REQUEST['source'];
+
+    // Source Slect Check box
+    // $check_list = $_REQUEST['check_list'];
 
     //Form 2
     $loan_amount = $_REQUEST['loan_amount'];
@@ -1309,7 +1309,10 @@ if (isset($_POST['next'])) {
     $trade_color = $_REQUEST['trade_color'];
     $trade_warranty = $_REQUEST['trade_warranty'];
     $trade_renewal = $_REQUEST['trade_renewal'];
-    $trade_file = $_REQUEST['trade_file'];
+
+    // Add Vehicle Pic
+    // $vehicle_image_file = $_REQUEST['vehicle_image_file'];
+    // $file_name2 = $_FILES['vehicle_image_file']['name'];
 
     $income_amount = $_REQUEST['income_amount'];
     $income_type = $_REQUEST['income_type'];
@@ -1333,7 +1336,41 @@ if (isset($_POST['next'])) {
     $liabilities_repayment = $_REQUEST['liabilities_repayment'];
     $liabilities_frequency_Radio = $_REQUEST['liabilities_frequency_Radio'];
 
-    echo $title;
+    echo $title . "  " . $first_name;
     echo $first_name;
+
+
+    //     $to = "pdncpathiraja@gmail.com";
+    //     $subject = "HTML email";
+
+    //     $message = "
+    // <html>
+    // <head>
+    //     <title>HTML email</title>
+    // </head>
+    // <body>
+    //     <p>This email contains HTML Tags!</p>
+    //     <table>
+    //         <tr>
+    //             <th>Full Name</th>
+    //             <th>Email</th>
+    //         </tr>
+    //         <tr>
+    //             <td>'$first_name'</td>
+    //             <td>'$email'</td>
+    //         </tr>
+    //     </table>
+    // </body>
+    // </html>
+    // ";
+
+    //     // Always set content-type when sending HTML email
+    //     $headers = "MIME-Version: 1.0" . "\r\n";
+    //     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    //     // More headers
+    //     $headers .= 'From: pdncpathiraja95@gmail.com' . "\r\n";
+
+    //     mail($to, $subject, $message, $headers);
 }
 ?>
